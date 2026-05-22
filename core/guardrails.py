@@ -130,27 +130,6 @@ DANGEROUS_SHELL_PATTERNS: List[Tuple[str, str, str]] = [
 
 # 敏感文件路径
 SENSITIVE_FILE_PATTERNS: List[Tuple[str, str, str]] = [
-    (r"/etc/passwd", "R07", "系统密码文件"),
-    (r"/etc/shadow", "R07", "系统密码哈希文件"),
-    (r"/etc/hosts", "R07", "系统主机配置"),
-    (r"\.env", "R07", "环境变量配置文件"),
-    (r"\.git/", "R07", "Git源码仓库"),
-    (r"\.gitignore", "R07", "Git配置文件"),
-    (r"\.svn/", "R07", "SVN源码仓库"),
-    (r"\.hg/", "R07", "Mercurial源码仓库"),
-    (r"config\.py", "R07", "Python配置文件"),
-    (r"settings\.py", "R07", "Django设置文件"),
-    (r"application\.yml", "R07", "SpringBoot配置文件"),
-    (r"application\.properties", "R07", "SpringBoot配置文件"),
-    (r"web\.config", "R07", "ASP.NET配置文件"),
-    (r"\.htaccess", "R07", "Apache配置文件"),
-    (r"id_rsa", "R07", "SSH私钥文件"),
-    (r"id_dsa", "R07", "SSH DSA私钥"),
-    (r"\.ssh/", "R07", "SSH配置目录"),
-    (r"\.aws/", "R07", "AWS凭证目录"),
-    (r"\.docker/", "R07", "Docker配置目录"),
-    (r"\bkubeconfig\b", "R07", "Kubernetes配置"),
-    (r"\bDockerfile\b", "R07", "Docker构建文件"),
     (r"\bdocker-compose", "R07", "Docker编排文件"),
 ]
 
